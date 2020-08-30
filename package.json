@@ -1,0 +1,19 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "client": "npm run start --prefix client",
+        "build": "npm run build --prefix client",
+        "dev": "concurrently \"npm run start\" \"npm run client\""
+    },
+    "author": "Ozair",
+    "license": "ISC",
+    "dependencies": {
+        "compression": "^1.7.4",
+        "concurrently": "^5.2.0",
+        "express": "^4.17.1"
+    }
+}
